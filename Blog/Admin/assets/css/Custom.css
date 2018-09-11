@@ -1,0 +1,72 @@
+﻿.widget-toolbox a {
+    line-height: 1.72;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.hiddenfile {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.padding-5NV {
+    padding: 5px !important;
+}
+
+.height-44NV {
+    height: 44px !important;
+}
+
+.margin-left-0NV {
+    margin-left: 0px !important;
+}
+
+select.multiselect,
+select.multiselect + div.btn-group,
+select.multiselect + div.btn-group button.multiselect,
+select.multiselect + div.btn-group.open .multiselect-container {
+    width: 100% !important;
+}
+
+    select.multiselect + div.btn-group button.multiselect {
+        text-align: left !important;
+    }
+
+    select.multiselect + div.btn-group b {
+        float: right !important;
+    }
+
+.date-box {
+    max-width: 90px !important;
+    width: 90px !important;
+}
+
+.data-drp {
+    max-width: 158px !important;
+    width: 158px !important;
+}
+
+.dateboxleft {
+    max-width: 90px !important;
+    width: 90px !important;
+}
+
+.data-caption {
+    font-size: 120% !important;
+    font-weight: bold;
+}
+
+.data-content {
+    font-size: 120% !important;
+}
+
+.data-ellip {
+    width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}

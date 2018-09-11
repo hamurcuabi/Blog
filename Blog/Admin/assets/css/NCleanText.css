@@ -1,0 +1,115 @@
+﻿/*clean text start*/
+.clean-text-icon {
+    cursor: pointer;
+    opacity: 0;
+    font-size: 110%;
+    top: 1px !important;
+}
+
+.clean-text-icon-right {
+    right: 5px !important;
+}
+
+.clean-text-icon-left {
+    left: 5px !important;
+}
+
+.clean-text-icon-autocomplete-right {
+    right: 48px !important;
+}
+
+.clean-text-icon-autocomplete-left {
+    left: 48px !important;
+}
+
+.clean-text-icon-mail-right {
+    right: 118px !important;
+}
+
+.clean-text-icon-mail-left {
+    left: 118px !important;
+}
+
+.clean-text-icon-ntextbox-right {
+    right: 60px !important;
+}
+
+.clean-text-icon-ntextbox-left {
+    left: 60px !important;
+}
+
+.clean-text-icon-duration-right {
+    right: 43px !important;
+}
+
+.clean-text-icon-duration-left {
+    left: 43px !important;
+}
+
+.clean-text-icon:hover {
+    opacity: 1;
+    z-index: 9999 !important;
+    font-size: 130%;
+}
+
+.clean-text-opacity {
+    z-index: 9999 !important;
+    opacity: 0.7;
+}
+
+.width-100-percent {
+    width: 100%;
+}
+
+
+@media (max-width: 360px) {
+    .clean-text-icon {
+        font-size: 170% !important;
+        top: 1px;
+    }
+
+        .clean-text-icon:hover {
+            opacity: 1;
+            font-size: 200% !important;
+        }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .clean-text-icon {
+        font-size: 170% !important;
+        top: 1px;
+    }
+
+        .clean-text-icon:hover {
+            opacity: 1;
+            font-size: 200% !important;
+        }
+}
+
+@media (min-width: 480px) and (max-width: 540px) {
+    .clean-text-icon {
+        font-size: 170% !important;
+        top: 1px;
+    }
+
+        .clean-text-icon:hover {
+            opacity: 1;
+            font-size: 200% !important;
+        }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+    .clean-text-icon {
+        font-size: 110% !important;
+        top: 1px;
+    }
+
+        .clean-text-icon:hover {
+            opacity: 1;
+            font-size: 130% !important;
+        }
+}
+
+
+
+/*clean text finish*/

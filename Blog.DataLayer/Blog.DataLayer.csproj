@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{561C406B-A681-47C0-9F95-4B5850318B57}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Blog.DataLayer</RootNamespace>
+    <AssemblyName>Blog.DataLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>H:\Blog\Publish\layer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABOUTUS.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ABOUTUSCOUNTER.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BLOG.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BlogEntity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlogEntity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BlogEntity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BlogEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlogEntity.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CATEGORIES.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DALAboutUs.cs" />
+    <Compile Include="DALAboutUsCounter.cs" />
+    <Compile Include="DALQuestion.cs" />
+    <Compile Include="DALBlog.cs" />
+    <Compile Include="DALCategories.cs" />
+    <Compile Include="DALDiseases.cs" />
+    <Compile Include="DALMail.cs" />
+    <Compile Include="DALMailParameter.cs" />
+    <Compile Include="DALMailQueue.cs" />
+    <Compile Include="DALMainPageSlider.cs" />
+    <Compile Include="DALMember.cs" />
+    <Compile Include="DALParameter.cs" />
+    <Compile Include="DISEASES.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="MAIL.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAILPARAMETER.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAILQUEUE.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MAINPAGESLIDER.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MEMBER.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PARAMETER.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUESTION.cs">
+      <DependentUpon>BlogEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SQLMs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="BlogEntity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BlogEntity.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BlogEntity.edmx.diagram">
+      <DependentUpon>BlogEntity.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BlogEntity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BlogEntity.Context.cs</LastGenOutput>
+      <DependentUpon>BlogEntity.edmx</DependentUpon>
+    </Content>
+    <Content Include="BlogEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BlogEntity.edmx</DependentUpon>
+      <LastGenOutput>BlogEntity.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
