@@ -16,7 +16,6 @@ namespace Blog
         {
             RouteTable.Routes.Add("AdminAboutUsList", new Route("AdminAboutUsList", new PageRouteHandler("~/Admin/ADMQuestion.aspx")));
             RouteTable.Routes.Add("AdminBlogList", new Route("AdminBlogList", new PageRouteHandler("~/Admin/ADMBlogList.aspx")));
-            RouteTable.Routes.Add("AdminDiseasesList", new Route("AdminDiseasesList", new PageRouteHandler("~/Admin/ADMDiseasesList.aspx")));
             RouteTable.Routes.Add("AdminMainPageList", new Route("AdminMainPageList", new PageRouteHandler("~/Admin/ADMBlogList.aspx")));
             RouteTable.Routes.Add("Login", new Route("Login", new PageRouteHandler("~/Admin/NewLogin.aspx")));
             RouteTable.Routes.Add("AdminMainPage", new Route("AdminMainPage", new PageRouteHandler("~/Admin/ADMBlogList.aspx")));
